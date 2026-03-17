@@ -36,14 +36,14 @@ public class Sketch {
       return -1;
     }
     if(store[startIndex].getCatNum()==catNumToFind){
-      return store[i].getInventory();
+      return store[startIndex].getInventory();
     }
     return recursiveLinearSearch(catNumToFind, startIndex+1);
   }
   public int binarySearch(int catNumToFind){
     int front=0;
     int end=store.length-1;
-    while(f<=e){
+    while(front<=end){
       int mid=front+(end-front)/2;
       if(store[mid].getCatNum()==catNumToFind){
         return store[mid].getInventory();
