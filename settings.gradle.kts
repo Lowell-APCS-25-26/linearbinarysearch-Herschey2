@@ -11,4 +11,4 @@ plugins {
 }
 
 rootProject.name = "Template"
-include("lib")
+include(".")
